@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import ToggleButton from './ToggleButton'
 
 const AppHeader = () => (
-  <HeaderContainer className='headerContainer'>
+  <header className='headerContainer'>
     <MainHeaderContainer className='mainHeaderContainer'>
       <MainHeader as='h2' attached='top'>
         Women's World Cup
@@ -20,17 +20,17 @@ const AppHeader = () => (
     <ButtonContainer className="buttonContainer">
       <ToggleButton />
     </ButtonContainer>
-  </HeaderContainer>
+  </header>
 )
 
 export default AppHeader
 
-const HeaderContainer = styled.header`
-    background: #6D6E6F;
-    margins: 40px;
-    display: flex;
-    flex-direction: column;
-`;
+// const HeaderContainer = styled.header`
+//     background: #6D6E6F;
+//     margins: 40px;
+//     display: flex;
+//     flex-direction: column;
+// `;
 
 const MainHeaderContainer = styled.div`
     background: #6D6E6F;
