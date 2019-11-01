@@ -4,8 +4,11 @@ import styled from 'styled-components'
 
 
 const PlayerCard = ({player: { name, country, searches}}) => (
+
+
+
 <CardContentContainer className="cardContainer">
-  <Card>
+  <Card >
     <Card.Content header={name} />
     <Card.Content description={country} />
     <Card.Content extra>
