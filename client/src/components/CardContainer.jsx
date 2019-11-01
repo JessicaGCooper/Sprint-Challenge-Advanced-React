@@ -14,7 +14,6 @@ import PlayerCard from './PlayerCard'
     componentDidMount(){
         axios.get("http://localhost:5000/api/players")
              .then(response => {
-                 console.log(response);
                  this.setState({
                      players: response.data
                     });
@@ -23,15 +22,7 @@ import PlayerCard from './PlayerCard'
                 console.log("The data was not returned:", error);
             });
         }
-
-        componentDidUpdate(prevProps, prevState){
-            if (prevState.players !== this.state.players){
-                console.log("User state has changed")
-            }
-            if (prevProps.players !== this.state.players){
-                console.log("User state has changed")
-            }
-          }
+        
 
     render() {
         return (
